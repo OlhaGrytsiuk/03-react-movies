@@ -1,7 +1,7 @@
 import axios from 'axios';
 import type { Movie } from '../types/movie';
 
-const API_URL = 'https://api.themoviedb.org/3/search/movie';
+const API_URL = 'https://api.themoviedb.org/3/search/movie?include_adult=false&language=en-US&page=1';
 
 interface FetchMoviesParams {
   query: string;
